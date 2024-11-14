@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: Dialogue 1 -2
+  m_EditorClassIdentifier: 
+  npcTextSequence:
+  - "Zoe: \"Missed? Right. I just needed someone to balance out my skill level. Consider
+    yourself\u2026 useful.\" "
+  options:
+  - responseTextSequence:
+    - '"If you say so. But I think you secretly love the challenge." '
+    requiredEmotion: sad
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
+  - responseTextSequence:
+    - "\"That\u2019s me\u2014Player #1, dedicated ego booster.\" "
+    requiredEmotion: neutral
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
+  - responseTextSequence:
+    - "\"Wow, Zoe, admit it. You\u2019re hopelessly entertained by me.\""
+    requiredEmotion: surprised
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: d0ac399d9baacd941afb812f03f31143, type: 2}

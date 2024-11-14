@@ -1,0 +1,37 @@
+{
+  "dialogs": [
+    {
+      "id": "1",
+      "text": "Hey there, how are you feeling today?",
+      "emotion": "neutral",
+      "choices": [
+        { "text": "I'm okay.", "nextId": "2", "emotion": "neutral" },
+        { "text": "Not great...", "nextId": "3", "emotion": "sad" }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "That's good to hear! Anything exciting planned?",
+      "emotion": "neutral",
+      "choices": [
+        { "text": "Not really.", "nextId": "4", "emotion": "neutral" },
+        { "text": "Actually, yes!", "nextId": "5", "emotion": "surprised" }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "I'm sorry to hear that. Would you like to talk about it?",
+      "emotion": "sad",
+      "choices": [
+        { "text": "Yes, please.", "nextId": "6", "emotion": "sad" },
+        { "text": "No, I'm okay.", "nextId": "4", "emotion": "neutral" }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Alright. Take care!",
+      "emotion": "neutral",
+      "choices": []
+    }
+  ]
+}
