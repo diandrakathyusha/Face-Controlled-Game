@@ -23,7 +23,7 @@ public class ConversationManager : MonoBehaviour
     {
         currentNode = Node;
         SetStartingNode(currentNode);
-        DisplayNPCText();
+       // DisplayNPCText();
     }
 
     public void DisplayDialogue(string playerEmotion)
