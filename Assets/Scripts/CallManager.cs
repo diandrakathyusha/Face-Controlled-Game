@@ -8,7 +8,7 @@ public class CallManager : MonoBehaviour
     public GameObject videoCallWindow;
     public GameObject incomingCallWindow;
     public GameObject infoWindow;
-    public AudioSource audioSource;
+    public AudioSource waitTone, ringTone;
     public float loadTime = 4f;  // Duration of the loading slider timer
 
     private void Start()
@@ -27,7 +27,7 @@ public class CallManager : MonoBehaviour
 
     private IEnumerator CallRoutine()
     {
-        audioSource.Play();
+        waitTone.Play();
         loadingSlider.gameObject.SetActive(true);
         loadingSlider.maxValue = loadTime;
         loadingSlider.value = 0;
@@ -48,7 +48,7 @@ public class CallManager : MonoBehaviour
     public void IncomingCall(string callerName)
     {
         incomingCallWindow.SetActive(true);
-
+        ringTone.Play();
     }
     // Accept call function: Immediately activates video call window
     public void AcceptCall()
@@ -56,19 +56,28 @@ public class CallManager : MonoBehaviour
         StopAllCoroutines(); // Stop any ongoing coroutines
         loadingSlider.gameObject.SetActive(false);
         videoCallWindow.SetActive(true);
-        incomingCallWindow.SetActive(false);
-
     }
 
-    // Call not picked up: Shows slider, then "call not picked up" info window
-    public void CallNotPickedUp()
+    public void RejectCall()
+    {
+        StartCoroutine(Callback());
+    }
+
+    private IEnumerator Callback()
+    {
+        yield return new WaitForSeconds(3f);
+        IncomingCall("Zoe");
+    }
+
+ // Call not picked up: Shows slider, then "call not picked up" info window
+        public void CallNotPickedUp()
     {
         StartCoroutine(CallNotPickedUpRoutine());
     }
 
     private IEnumerator CallNotPickedUpRoutine()
     {
-        audioSource.Play();
+        waitTone.Play();
         loadingSlider.gameObject.SetActive(true);
         loadingSlider.maxValue = loadTime;
         loadingSlider.value = 0;

@@ -4,12 +4,15 @@ using System.Collections.Generic;
 
 public class ConversationManager : MonoBehaviour
 {
+    public PlayerVideoCall playerVideoCall;
     public Text npcDialogueText;
     public Text playerResponseText;
     public Button continueButton;
     public DialogueDatas startingNode;
     public DialogueDatas currentNode;
     public AudioSource audioSource;
+    public GameObject videoCallWindow;
+
 
     private int sentenceIndex = 0;                 // Tracks current sentence in NPC dialogue sequence
     private bool awaitingPlayerResponse = false;   // Indicates if awaiting a player response
@@ -23,7 +26,8 @@ public class ConversationManager : MonoBehaviour
     {
         currentNode = Node;
         SetStartingNode(currentNode);
-       // DisplayNPCText();
+        //videoCallWindow.SetActive(true); // Activate the video call window when dialogue starts
+        // DisplayNPCText();
     }
 
     public void DisplayDialogue(string playerEmotion)
@@ -66,6 +70,7 @@ public class ConversationManager : MonoBehaviour
         else
         {
             Debug.LogWarning("No matching dialogue option found for emotion: " + playerEmotion);
+            EndDialogue();
         }
     }
 
@@ -83,7 +88,6 @@ public class ConversationManager : MonoBehaviour
         // Display the next NPC dialogue after player's response
         DisplayNPCText();
     }
-
 
     public void ContinueDialogue()
     {
@@ -112,8 +116,15 @@ public class ConversationManager : MonoBehaviour
         else if (awaitingPlayerResponse)
         {
             npcDialogueText.text = ""; // Clear NPC text to show player’s response
+
+            // If no more responses or nodes, end the conversation
+            if (currentNode == null || currentNode.options.Count == 0)
+            {
+                EndDialogue();
+            }
         }
     }
+
 
     private void CheckAutoAdvance()
     {
@@ -140,6 +151,8 @@ public class ConversationManager : MonoBehaviour
         awaitingPlayerResponse = false;
         ContinueDialogue(); // Display the first sentence immediately
     }
+
+
     public void DisplayCurrentDialogue(string playerEmotion)
     {
         if (currentNode == null) return;
@@ -155,6 +168,12 @@ public class ConversationManager : MonoBehaviour
             StartCoroutine(DisplayPlayerResponseAndNPCDialogue(chosenOption.responseTextSequence));
 
         }
+    }
+
+    private void EndDialogue()
+    {
+        Debug.Log("Dialogue ended.");
+        playerVideoCall.EndVideoCall(); // Call the method to deactivate the video call window
     }
 
 }

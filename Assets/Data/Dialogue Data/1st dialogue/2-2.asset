@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
-  m_Name: Dialogue 1 -2
+  m_Name: 2-2
   m_EditorClassIdentifier: 
   npcTextSequence:
-  - "Zoe: \"Missed? Right. I just needed someone to balance out my skill level. Consider
-    yourself\u2026 useful.\" "
+  - 'Zoe: "Charm? Is that what you call it? More like chaotic energy. But sure, whatever
+    helps you sleep at night."five whole seconds."'
+  npcVoiceoverClips: []
   options:
   - responseTextSequence:
-    - '"If you say so. But I think you secretly love the challenge." '
+    - '"Five seconds? Wow, such generosity. How can I refuse?" '
     requiredEmotion: sad
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - "\"That\u2019s me\u2014Player #1, dedicated ego booster.\" "
+    - '"Chaotic energy is my brand. Glad you noticed." '
     requiredEmotion: neutral
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - "\"Wow, Zoe, admit it. You\u2019re hopelessly entertained by me.\""
+    - "\"Alright, Zoe, enjoy the wins while you can. Your reign won\u2019t last long.\" "
     requiredEmotion: surprised
     autoAdvance: 0
-    nextNode: {fileID: 11400000, guid: d0ac399d9baacd941afb812f03f31143, type: 2}
+    nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}

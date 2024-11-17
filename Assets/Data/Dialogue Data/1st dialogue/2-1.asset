@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
-  m_Name: Dialogue 1 -1
+  m_Name: 2-1
   m_EditorClassIdentifier: 
   npcTextSequence:
-  - "Zoe: \"Sure, keep telling yourself that. Just remember, I\u2019m the one who
-    crushed you.\" "
+  - "Zoe: \"Win? Ha. If you somehow pull that off, I\u2019ll even let you brag about
+    it for five whole seconds.\""
+  npcVoiceoverClips: []
   options:
   - responseTextSequence:
-    - '"You only won because I was going easy on you." '
+    - '"Five seconds? Wow, such generosity. How can I refuse?" '
     requiredEmotion: sad
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - "\"Fine, you win this round. But don\u2019t expect it every time.\" "
+    - '"Chaotic energy is my brand. Glad you noticed." '
     requiredEmotion: neutral
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - "\"One day, you\u2019ll regret underestimating me.\" "
+    - "\"Alright, Zoe, enjoy the wins while you can. Your reign won\u2019t last long.\" "
     requiredEmotion: surprised
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}

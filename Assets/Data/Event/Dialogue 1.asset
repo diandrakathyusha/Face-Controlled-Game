@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5048d1601797938448f09f3efab6ef28, type: 3}
-  m_Name: GameEvent 2
+  m_Name: Dialogue 1
   m_EditorClassIdentifier: 
   eventType: 0
-  dialogueData: {fileID: 11400000, guid: 3ac3c4de7c5bf7f419e7a6f62dad4b9c, type: 2}
+  dialogueData: {fileID: 11400000, guid: f77b28d27330c034fb4e4dcd12b29969, type: 2}
   emailEntry: {fileID: 0}
   callerName: 
   endingText: 

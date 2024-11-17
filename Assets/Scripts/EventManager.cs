@@ -11,11 +11,6 @@ public class EventManager : MonoBehaviour
     public CallManager callManager;
 //    public EndingScreenManager endingScreenManager;
 
-    private void Start()
-    {
-
-    }
-
     public void TriggerEvent()
     {
         if (currentEventIndex >= gameEvents.Count) return;
@@ -28,7 +23,7 @@ public class EventManager : MonoBehaviour
                 dialogueManager.StartDialogue(currentEvent.dialogueData);
                 break;
             case GameEventType.Email:
-                emailManager.DisplayEmail(currentEvent.emailEntry);
+                emailManager.DisplayEmail(currentEvent.emailEntryID); 
                 break;
             //when receiving a call
             case GameEventType.IncomingCall:

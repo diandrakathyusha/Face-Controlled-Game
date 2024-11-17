@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcTextSequence:
   - 'Zoe: "Whatever you say, nerd. I am going to destroy you again next round."'
+  npcVoiceoverClips: []
   options: []

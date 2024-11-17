@@ -10,6 +10,7 @@ public class PlayerVideoCall : MonoBehaviour
     public Sprite sad, neutral, surprised;
     public Button submitButton;
     public ConversationManager conversationManager;
+    public EventManager eventManager;
 
     private float timer;
     private string currentEmotion;
@@ -67,6 +68,13 @@ public class PlayerVideoCall : MonoBehaviour
         }
 
         //submitButton.interactable = false;
-        timer = 5f; // Reset timer for next emotion selection
+        timer = 15f; // Reset timer for next emotion selection
+    }
+
+    public void EndVideoCall()
+    {
+        gameObject.SetActive(false); // Assumes the video call window is the GameObject this script is attached to
+        Debug.Log("Video call ended.");
+        eventManager.TriggerEvent();
     }
 }
