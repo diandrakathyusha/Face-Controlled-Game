@@ -18,17 +18,17 @@ MonoBehaviour:
   npcVoiceoverClips: []
   options:
   - responseTextSequence:
-    - '"Five seconds? Wow, such generosity. How can I refuse?" '
+    - "\"Generous and humble? Zoe, you\u2019re really spoiling me.\" "
     requiredEmotion: sad
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - '"Chaotic energy is my brand. Glad you noticed." '
+    - "\"Chaotic energy or not, admit it\u2014you\u2019d be bored without me.\" "
     requiredEmotion: neutral
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
   - responseTextSequence:
-    - "\"Alright, Zoe, enjoy the wins while you can. Your reign won\u2019t last long.\" "
+    - "\"Alright, big shot. Next round, I\u2019m taking you down.\" "
     requiredEmotion: surprised
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: 4635ae9c6e307704f97a17f0e4d7c4e9, type: 2}
