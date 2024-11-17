@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
                 break;
             //when receiving a call
             case GameEventType.IncomingCall:
-//                callManager.StartCall(currentEvent.callerName);
+               callManager.IncomingCall(currentEvent.callerName);
                 break;
             case GameEventType.EndingScreen:
 //                endingScreenManager.ShowEnding(currentEvent.endingText);
