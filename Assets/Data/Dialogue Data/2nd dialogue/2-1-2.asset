@@ -22,20 +22,20 @@ MonoBehaviour:
     - '"Aw, and here I thought I was special."'
     requiredEmotion: neutral
     autoAdvance: 0
-    nextNode: {fileID: 11400000, guid: caa68dd3b872ba740bffbeb4bb7e9a8b, type: 2}
+    nextNode: {fileID: 11400000, guid: 9df366114e9cb84448e1efa2790b84c4, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - "\"So, if I\u2019m your favorite, do I get perks?\" "
     requiredEmotion: surprised
     autoAdvance: 0
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 9df366114e9cb84448e1efa2790b84c4, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - '"I knew I had a shot." '
     requiredEmotion: sad
     autoAdvance: 0
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 9df366114e9cb84448e1efa2790b84c4, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0

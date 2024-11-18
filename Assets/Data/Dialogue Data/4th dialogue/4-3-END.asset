@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
-  m_Name: 4-2-3
+  m_Name: 4-3-END
   m_EditorClassIdentifier: 
   dialogueID: 
-  npcTextSequence:
-  - "Zoe: \"Don\u2019t read too much into it. But yeah, you\u2019re\u2026 not the
-    worst.\""
+  npcTextSequence: []
   npcVoiceoverClips: []
   options:
   - responseTextSequence: []
     requiredEmotion: 
     autoAdvance: 1
-    nextNode: {fileID: 11400000, guid: 3038fc2be844c404ebffc8eb9cace1c3, type: 2}
+    nextNode: {fileID: 0}
     resultingDialogueID: 
-    resultingEmailID: 15
+    resultingEmailID: 16

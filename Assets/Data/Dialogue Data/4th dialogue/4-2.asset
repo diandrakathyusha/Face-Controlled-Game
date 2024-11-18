@@ -20,22 +20,22 @@ MonoBehaviour:
   options:
   - responseTextSequence:
     - '"Well, we make a good team, don''t we?"'
-    requiredEmotion: 
+    requiredEmotion: neutral
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: c55ecf2be73d1094faea13bc329d34f3, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - "\"Guess I\u2019m just your go-to entertainment.\" "
-    requiredEmotion: 
+    requiredEmotion: sad
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: b2a3ef10c317f6d489c31969bef6a6a8, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - '"Are you saying you actually like hanging out with me?" '
-    requiredEmotion: 
+    requiredEmotion: surprised
     autoAdvance: 0
     nextNode: {fileID: 11400000, guid: f0b18d3a766a80d478619d631c409943, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0

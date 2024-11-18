@@ -9,6 +9,7 @@ public class CallManager : MonoBehaviour
     public GameObject incomingCallWindow;
     public GameObject infoWindow;
     public AudioSource waitTone, ringTone;
+    public EventManager eventManager;
     public float loadTime = 4f;  // Duration of the loading slider timer
 
     private void Start()

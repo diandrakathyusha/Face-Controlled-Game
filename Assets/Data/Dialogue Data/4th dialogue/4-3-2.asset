@@ -22,6 +22,6 @@ MonoBehaviour:
   - responseTextSequence: []
     requiredEmotion: 
     autoAdvance: 1
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 5a3302df98520114688b11e62920f815, type: 2}
     resultingDialogueID: 
     resultingEmailID: 16

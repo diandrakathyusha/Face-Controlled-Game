@@ -22,20 +22,20 @@ MonoBehaviour:
     - "\"I\u2019ll take that as a \u2018yes.\u2019\" "
     requiredEmotion: neutral
     autoAdvance: 0
-    nextNode: {fileID: 11400000, guid: caa68dd3b872ba740bffbeb4bb7e9a8b, type: 2}
+    nextNode: {fileID: 11400000, guid: 4890b98438f16fc43abd8be6e137cb2d, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - "\"You can admit you\u2019re a little attached.\" "
     requiredEmotion: surprised
     autoAdvance: 0
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 4890b98438f16fc43abd8be6e137cb2d, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
   - responseTextSequence:
     - "\"Got it. You\u2019re stuck with me.\""
     requiredEmotion: sad
     autoAdvance: 0
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 4890b98438f16fc43abd8be6e137cb2d, type: 2}
     resultingDialogueID: 
-    resultingEmailID: 
+    resultingEmailID: 0
