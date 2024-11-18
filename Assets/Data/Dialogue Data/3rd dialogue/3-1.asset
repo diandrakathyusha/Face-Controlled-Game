@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 3-1
+  m_EditorClassIdentifier: 
+  dialogueID: 
+  npcTextSequence:
+  - "Zoe: \"A worm house? I\u2019m not sure if that\u2019s adorable or disturbing.
+    But okay, you passed the test.\""
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence:
+    - '"Maybe no transformations, though. I like you exactly as you are." '
+    requiredEmotion: neutral
+    autoAdvance: 1
+    nextNode: {fileID: 11400000, guid: 052b5dde87c115e4c8dfcdc8e855e80f, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 8
+  - responseTextSequence:
+    - "\"Guess we\u2019re stuck with each other, then. Worm phase or not.\" "
+    requiredEmotion: surprised
+    autoAdvance: 1
+    nextNode: {fileID: 11400000, guid: 052b5dde87c115e4c8dfcdc8e855e80f, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 8
+  - responseTextSequence:
+    - "\"Good to know. I\u2019d definitely stick around.\" "
+    requiredEmotion: sad
+    autoAdvance: 1
+    nextNode: {fileID: 11400000, guid: 052b5dde87c115e4c8dfcdc8e855e80f, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 8

@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Dialogue System Extras/Visual Novel Framework/Example/Example Start.unity
     guid: d95b12ca39d2c3646807ebea1bec1abc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Dialogue System Extras/Visual Novel Framework/Example/Example Gameplay.unity
     guid: 267461490bfad3c428438f71bca38a7e
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

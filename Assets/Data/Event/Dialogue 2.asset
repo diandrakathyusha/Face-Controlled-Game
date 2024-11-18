@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue 2
   m_EditorClassIdentifier: 
   eventType: 0
-  dialogueData: {fileID: 11400000, guid: f77b28d27330c034fb4e4dcd12b29969, type: 2}
-  emailEntry: {fileID: 0}
+  dialogueData: {fileID: 11400000, guid: 222e571ebc6d18848ad6a6f6d23c63fc, type: 2}
+  emailEntryID: 
   callerName: 
   endingText: 

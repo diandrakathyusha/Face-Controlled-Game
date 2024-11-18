@@ -71,10 +71,11 @@ public class PlayerVideoCall : MonoBehaviour
         timer = 15f; // Reset timer for next emotion selection
     }
 
-    public void EndVideoCall()
+    public void EndVideoCall(int eventIndex)
+
     {
         gameObject.SetActive(false); // Assumes the video call window is the GameObject this script is attached to
         Debug.Log("Video call ended.");
-        eventManager.TriggerEvent();
+        eventManager.TriggerEvent(eventIndex);
     }
 }

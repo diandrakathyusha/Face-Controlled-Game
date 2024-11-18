@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 3-0
+  m_EditorClassIdentifier: 
+  dialogueID: 
+  npcTextSequence:
+  - "Zoe: \"Alright, hypothetical time. If I, I dunno, turned into a worm\u2026 would
+    you still, like, be into me?\""
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence:
+    - "\"Absolutely. I\u2019d even build a tiny worm house for you.\" "
+    requiredEmotion: neutral
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 9f4a9ab6fdb82ec4da0f938a8e25ca5f, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 0
+  - responseTextSequence:
+    - '"You already look like one." '
+    requiredEmotion: surprised
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 64c24b60b42e1b74ab44ccdb0c3e3100, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 0
+  - responseTextSequence:
+    - "\"Are\u2026 are you into zoophilia?\" "
+    requiredEmotion: sad
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: c9abaf4b60883ad4b9a3304237c7a21c, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 0

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 4-3
+  m_EditorClassIdentifier: 
+  dialogueID: 43
+  npcTextSequence:
+  - "Zoe: \"Hey, so\u2026 thanks for all the chats and everything. It\u2019s been\u2026
+    fun.\" "
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence:
+    - "\"Wait, \u2018fun\u2019? Just fun?\" "
+    requiredEmotion: sad
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 0785fff66442bf04da627d9831f45fd7, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - "\"Don\u2019t tell me you\u2019re ditching me now!\""
+    requiredEmotion: neutral
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: 566b504da81202e47abb248ef50f2fb2, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - '"Is this the friend-zone conversation?"'
+    requiredEmotion: surprised
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: edfbb41f2769a7949878bd4738697fc0, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 

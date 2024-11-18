@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class ConversationManager : MonoBehaviour
 {
     public PlayerVideoCall playerVideoCall;
+    public EmailManager emailManager;
     public Text npcDialogueText;
     public Text playerResponseText;
     public Button continueButton;
@@ -12,6 +13,9 @@ public class ConversationManager : MonoBehaviour
     public DialogueDatas currentNode;
     public AudioSource audioSource;
     public GameObject videoCallWindow;
+
+
+    public Dictionary<int, DialogueDatas> dialogueDatabase = new Dictionary<int, DialogueDatas>();
 
 
     private int sentenceIndex = 0;                 // Tracks current sentence in NPC dialogue sequence
@@ -53,12 +57,31 @@ public class ConversationManager : MonoBehaviour
 
         if (chosenOption != null)
         {
+            /*
+            if (!int.IsNullOrEmpty(chosenOption.resultingEmailID))
+            {
+                emailManager.DisplayEmail(chosenOption.resultingEmailID);
+                Debug.Log($"Display Email ID: {chosenOption.resultingEmailID}");
+            }
+
+            if (dialogueDatabase.TryGetValue(chosenOption.resultingDialogueID, out var nextDialogue))
+            {
+                currentNode = nextDialogue;
+                Debug.Log($"Moved to Dialogue ID: {nextDialogue.dialogueID}");
+                // branching dialogue
+            }
+
+            */
+
             if (chosenOption.autoAdvance)
             {
+                /*
                 // Auto-advance to the next NPC dialogue
                 currentNode = chosenOption.nextNode;
                 DisplayNPCText();
                 return; // Skip player response and reset
+                */
+                playerVideoCall.EndVideoCall(chosenOption.resultingEmailID); // Call the method to deactivate the video call window
             }
             else
             {
@@ -170,10 +193,12 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
+    private int eventIndex = 2;
     private void EndDialogue()
     {
         Debug.Log("Dialogue ended.");
-        playerVideoCall.EndVideoCall(); // Call the method to deactivate the video call window
+        playerVideoCall.EndVideoCall(eventIndex); // Call the method to deactivate the video call window
+        eventIndex++;
     }
 
 }

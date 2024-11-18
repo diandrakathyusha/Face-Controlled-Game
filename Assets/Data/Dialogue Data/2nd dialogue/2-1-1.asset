@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 2-1-1
+  m_EditorClassIdentifier: 
+  dialogueID: 
+  npcTextSequence:
+  - "Zoe: \"Jealous? Don\u2019t be ridiculous. I just\u2026 like keeping an eye on
+    my rivals, alright?\" "
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence:
+    - "\"Rivals, huh? So I\u2019m that important?\" "
+    requiredEmotion: neutral
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: f0bc3abcb7db77b438247c6f8e229c43, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - "\"You can admit it, Zoe. It\u2019s okay to care.\" "
+    requiredEmotion: surprised
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: f0bc3abcb7db77b438247c6f8e229c43, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - "\"Guess I\u2019m yours, then. No competition.\" "
+    requiredEmotion: sad
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: f0bc3abcb7db77b438247c6f8e229c43, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 

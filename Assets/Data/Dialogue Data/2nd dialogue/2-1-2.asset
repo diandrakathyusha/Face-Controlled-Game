@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 2-1-2
+  m_EditorClassIdentifier: 
+  dialogueID: 
+  npcTextSequence:
+  - "Zoe:  \"Nice try. But don\u2019t think that just because you\u2019re my \u2018favorite,\u2019
+    it means you get special treatment.\" "
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence:
+    - '"Aw, and here I thought I was special."'
+    requiredEmotion: neutral
+    autoAdvance: 0
+    nextNode: {fileID: 11400000, guid: caa68dd3b872ba740bffbeb4bb7e9a8b, type: 2}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - "\"So, if I\u2019m your favorite, do I get perks?\" "
+    requiredEmotion: surprised
+    autoAdvance: 0
+    nextNode: {fileID: 0}
+    resultingDialogueID: 
+    resultingEmailID: 
+  - responseTextSequence:
+    - '"I knew I had a shot." '
+    requiredEmotion: sad
+    autoAdvance: 0
+    nextNode: {fileID: 0}
+    resultingDialogueID: 
+    resultingEmailID: 

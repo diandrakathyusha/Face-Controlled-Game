@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+
 public class EmailManager : MonoBehaviour
 {
     public AudioSource notificationSound;
     public Image notificationIcon;
     public GameObject notificationWindow;
     public SceneObjectManager sceneObjectManager;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class EmailManager : MonoBehaviour
         
     }
 
-    public void DisplayEmail(string emailEntryID)
+    public void DisplayEmail(int emailEntryID)
     {
         var emailEntry = sceneObjectManager.GetObjectByID(emailEntryID);
         if (emailEntry != null)

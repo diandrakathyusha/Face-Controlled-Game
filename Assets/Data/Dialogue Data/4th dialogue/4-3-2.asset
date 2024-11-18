@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c9160aa4e1164080c192546c1a2b5, type: 3}
+  m_Name: 4-3-2
+  m_EditorClassIdentifier: 
+  dialogueID: 
+  npcTextSequence:
+  - "Zoe:  \"Come on, don\u2019t make this weird. You\u2019re a good\u2026 friend.
+    But that\u2019s all.\"  \"Come on, don\u2019t make this weird. You\u2019re a
+    good\u2026 friend. But that\u2019s all.\" "
+  npcVoiceoverClips: []
+  options:
+  - responseTextSequence: []
+    requiredEmotion: 
+    autoAdvance: 1
+    nextNode: {fileID: 0}
+    resultingDialogueID: 
+    resultingEmailID: 16

@@ -5,7 +5,7 @@ public class SceneObjectManager : MonoBehaviour
 {
     public static SceneObjectManager Instance { get; private set; }
 
-    private Dictionary<string, GameObject> objectLookup = new Dictionary<string, GameObject>();
+    private Dictionary<int, GameObject> objectLookup = new Dictionary<int, GameObject>();
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class SceneObjectManager : MonoBehaviour
         }
     }
 
-    public GameObject GetObjectByID(string id)
+    public GameObject GetObjectByID(int id)
     {
         objectLookup.TryGetValue(id, out GameObject result);
         return result;
